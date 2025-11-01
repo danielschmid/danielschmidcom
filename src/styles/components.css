@@ -1,5 +1,3 @@
-/* Component-first class organization for better maintainability */
-
 /* Typography Components */
 @layer components {
 	.text-heading-primary {
