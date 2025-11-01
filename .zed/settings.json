@@ -7,8 +7,8 @@
 				},
 				{
 					"external": {
-						"command": "prettier",
-						"arguments": ["--stdin-filepath", "{buffer_path}"]
+						"command": "npx",
+						"arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
 					}
 				}
 			],
@@ -24,8 +24,8 @@
 				},
 				{
 					"external": {
-						"command": "prettier",
-						"arguments": ["--stdin-filepath", "{buffer_path}"]
+						"command": "npx",
+						"arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
 					}
 				}
 			],
@@ -37,8 +37,8 @@
 		"Astro": {
 			"formatter": {
 				"external": {
-					"command": "prettier",
-					"arguments": ["--stdin-filepath", "{buffer_path}"]
+					"command": "npx",
+					"arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
 				}
 			},
 			"format_on_save": "on"
@@ -46,8 +46,8 @@
 		"CSS": {
 			"formatter": {
 				"external": {
-					"command": "prettier",
-					"arguments": ["--stdin-filepath", "{buffer_path}"]
+					"command": "npx",
+					"arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
 				}
 			},
 			"format_on_save": "on"
@@ -55,8 +55,8 @@
 		"JSON": {
 			"formatter": {
 				"external": {
-					"command": "prettier",
-					"arguments": ["--stdin-filepath", "{buffer_path}"]
+					"command": "npx",
+					"arguments": ["prettier", "--stdin-filepath", "{buffer_path}"]
 				}
 			},
 			"format_on_save": "on"
