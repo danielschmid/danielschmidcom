@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
+import compress from "@playform/compress";
 import path from "path";
 
 // https://astro.build/config
@@ -35,6 +36,15 @@ export default defineConfig({
       }
     ]
   },
+  integrations: [
+    compress({
+      CSS: true,
+      HTML: true,
+      Image: true,
+      JavaScript: true,
+      SVG: true,
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
     resolve: {
