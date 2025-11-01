@@ -7,6 +7,7 @@ import path from "path";
 export default defineConfig({
   output: "static",
   vite: {
+    // @ts-expect-error - TailwindCSS v4 vite plugin type compatibility issue
     plugins: [tailwindcss()],
     resolve: {
       alias: {
