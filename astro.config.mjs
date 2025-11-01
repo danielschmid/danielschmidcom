@@ -5,7 +5,36 @@ import path from "path";
 
 // https://astro.build/config
 export default defineConfig({
+  site: process.env.CF_PAGES_URL || process.env.CUSTOM_DOMAIN || "https://danielschmid.pages.dev",
   output: "static",
+  experimental: {
+    fonts: [
+      {
+        provider: "local",
+        name: "ABC Diatype",
+        cssVariable: "--font-diatype",
+        variants: [
+          {
+            weight: 400,
+            style: "normal",
+            src: ["./src/assets/fonts/ABCDiatype-Regular.woff2"]
+          }
+        ]
+      },
+      {
+        provider: "local", 
+        name: "ABC Diatype Mono",
+        cssVariable: "--font-diatype-mono",
+        variants: [
+          {
+            weight: 400,
+            style: "normal",
+            src: ["./src/assets/fonts/ABCDiatypeMono-Regular.woff2"]
+          }
+        ]
+      }
+    ]
+  },
   vite: {
     plugins: [tailwindcss()],
     resolve: {

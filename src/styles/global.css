@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-diatype), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-diatype-mono), ui-monospace, "JetBrains Mono", monospace;
+}
