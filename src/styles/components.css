@@ -1,0 +1,88 @@
+/* Component-first class organization for better maintainability */
+
+/* Typography Components */
+@layer components {
+	.text-heading-primary {
+		@apply font-sans text-2xl leading-tight text-gray-900;
+	}
+
+	.text-heading-secondary {
+		@apply font-sans text-xl leading-tight text-gray-800;
+	}
+
+	.text-body {
+		@apply font-sans text-base leading-normal text-gray-700;
+	}
+
+	.text-body-small {
+		@apply font-sans text-sm leading-normal text-gray-600;
+	}
+
+	.text-caption {
+		@apply font-sans text-xs leading-tight text-gray-500;
+	}
+}
+
+/* Layout Components */
+@layer components {
+	.container-content {
+		@apply mx-auto w-full max-w-4xl px-6;
+	}
+
+	.container-narrow {
+		@apply mx-auto w-full max-w-2xl px-6;
+	}
+
+	.container-wide {
+		@apply mx-auto w-full max-w-6xl px-6;
+	}
+}
+
+/* Interactive Components */
+@layer components {
+	.btn-primary {
+		@apply inline-flex items-center justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none;
+	}
+
+	.btn-secondary {
+		@apply inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none;
+	}
+
+	.link-primary {
+		@apply rounded text-blue-600 underline transition-colors hover:text-blue-800 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none;
+	}
+}
+
+/* Card Components */
+@layer components {
+	.card {
+		@apply overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm;
+	}
+
+	.card-header {
+		@apply border-b border-gray-200 px-6 py-4;
+	}
+
+	.card-body {
+		@apply px-6 py-4;
+	}
+
+	.card-footer {
+		@apply border-t border-gray-200 bg-gray-50 px-6 py-4;
+	}
+}
+
+/* Utility Components */
+@layer components {
+	.focus-ring {
+		@apply rounded focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none;
+	}
+
+	.sr-only {
+		@apply absolute -m-px h-px w-px overflow-hidden border-0 p-0 whitespace-nowrap;
+	}
+
+	.transition-base {
+		@apply transition-all duration-200 ease-in-out;
+	}
+}

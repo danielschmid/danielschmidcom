@@ -1,0 +1,85 @@
+{
+	"languages": {
+		"JavaScript": {
+			"formatter": [
+				{
+					"code_action": "source.fixAll.eslint"
+				},
+				{
+					"external": {
+						"command": "prettier",
+						"arguments": ["--stdin-filepath", "{buffer_path}"]
+					}
+				}
+			],
+			"format_on_save": "on",
+			"code_actions_on_format": {
+				"source.fixAll.eslint": true
+			}
+		},
+		"TypeScript": {
+			"formatter": [
+				{
+					"code_action": "source.fixAll.eslint"
+				},
+				{
+					"external": {
+						"command": "prettier",
+						"arguments": ["--stdin-filepath", "{buffer_path}"]
+					}
+				}
+			],
+			"format_on_save": "on",
+			"code_actions_on_format": {
+				"source.fixAll.eslint": true
+			}
+		},
+		"Astro": {
+			"formatter": {
+				"external": {
+					"command": "prettier",
+					"arguments": ["--stdin-filepath", "{buffer_path}"]
+				}
+			},
+			"format_on_save": "on"
+		},
+		"CSS": {
+			"formatter": {
+				"external": {
+					"command": "prettier",
+					"arguments": ["--stdin-filepath", "{buffer_path}"]
+				}
+			},
+			"format_on_save": "on"
+		},
+		"JSON": {
+			"formatter": {
+				"external": {
+					"command": "prettier",
+					"arguments": ["--stdin-filepath", "{buffer_path}"]
+				}
+			},
+			"format_on_save": "on"
+		}
+	},
+	"lsp": {
+		"tailwindcss-language-server": {
+			"settings": {
+				"tailwindCSS": {
+					"emmetCompletions": true,
+					"experimental": {
+						"configFile": "./src/styles/global.css"
+					}
+				}
+			}
+		}
+	},
+	"features": {
+		"copilot": true
+	},
+	"terminal": {
+		"shell": {
+			"program": "zsh"
+		}
+	}
+}

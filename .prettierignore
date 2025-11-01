@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Production builds
+dist/
+.astro/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Public assets
+public/
+
+# Configuration files
+*.config.js
+*.config.mjs
+*.config.ts
